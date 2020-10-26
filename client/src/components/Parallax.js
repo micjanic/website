@@ -1,5 +1,5 @@
 import React from "react";
 
 export const Parallax = () => {
-  return <></>;
+  return <>hello2</>;
 };

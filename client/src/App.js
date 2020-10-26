@@ -1,18 +1,13 @@
 import "./App.css";
 import React from "react";
 
-import { Parallax } from "./components/Parallax";
-import { SceneContainer } from "./components/SceneContainer";
-
-import { ScreenValuesProvider } from "./components/ScreenValuesProvider";
+import { Splash } from "./components/Splash";
 
 function App() {
   return (
     <div>
-      <h1>Welcome</h1>
-      <Parallax.ScreenValuesProvider>
-        <SceneContainer></SceneContainer>
-      </Parallax.ScreenValuesProvider>
+      <h1>test</h1>
+      <Splash />
     </div>
   );
 }
