@@ -1,10 +1,10 @@
 import React from "react";
-import { BuildGenerate } from "./BuildGenerate";
+import { BuildLayer } from "./BuildLayer";
 
 export const Splash = () => {
   return (
     <div className="splash-container">
-      <BuildGenerate />
+      <BuildLayer />
     </div>
   );
 };
