@@ -1,10 +1,21 @@
-import React from "react";
-import { BuildLayer } from "./BuildLayer";
+import React, { useState } from 'react'
+import { BuildStage } from './BuildStage'
+
+//custom hooks
+import { useStage } from '../hooks/useStage'
+
+import { createStage } from '../sceneHelpers'
 
 export const Splash = () => {
-  return (
-    <div className="splash-container">
-      <BuildLayer />
-    </div>
-  );
-};
+    const [stage, setStage] = useStage()
+
+    const reset = () => {
+        setStage(createStage())
+    }
+
+    return (
+        <div className="splash-container">
+            <BuildStage stage={stage} />
+        </div>
+    )
+}
