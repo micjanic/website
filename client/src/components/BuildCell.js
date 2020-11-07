@@ -1,7 +1,7 @@
 import React from 'react'
 
 const BuildCell = ({ type }) => {
-    return <div>type</div>
+    return <></>
 }
 
 export default BuildCell
